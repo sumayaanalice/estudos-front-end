@@ -65,4 +65,16 @@ a propriedade display: grid; faz com o que o conteúdo possa ser dividido em vá
 
 o Gap é a propriedade que da o espaçamento entre uma coluna e outra.
 
+auto-fit fala para o elemento que ele pode colocar o tanto de elemento que ele conseguir dentro do espaço em branco da tela. Tentar ocupar o máximo que conseguir. Só funciona se tiver um valor para a propriedade ter como default.
+
+minmax() é uma função que tem um valor mínimo e máximo onde o elemento pode caber dentro da tela e quantos elementos ele consegue encaixar dentro desse valor.
+*/
+
+/* Flexbox
+
+O flexbox pode ser declarado tanto para elementos container quanto para elementos flex (elementos filhos).
+
+- Elementos flex:
+    - Flex-grow: Serve para que o conteúdo cresça ocupando o mesmo tamanho os espaços em branco que a página tiver com base no seu conteúdo.
+    - flex-basis: O basis vai tentar deixar todos os elementos do mesmo tamanho contando com seu conteúdo. O valor default é auto.
 */
