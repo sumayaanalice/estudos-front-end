@@ -1,0 +1,69 @@
+.grid {
+	display: grid;
+	gap: 20px;
+	grid-template-columns: repeat(2, 1fr);
+}
+.titulo {
+	grid-column: 1 / -1;
+}
+
+.info{
+  display: grid;
+  place-items:start;
+  gap: 20px;
+  place-self: start;
+
+}
+/* estilos gerais */
+body {
+	font-family: Arial;
+	margin: 40px;
+}
+
+p,
+h1 {
+	margin: 0px;
+}
+
+p,
+section {
+	font-size: 20px;
+}
+
+h1 {
+	font-size: 48px;
+	line-height: 1;
+}
+.comprar {
+	background: #a8f;
+	padding: 10px;
+	color: #103;
+	text-decoration: none;
+	border-radius: 4px;
+	text-align: center;
+	font-size: 20px;
+	align-self: start;
+}
+span {
+	background: #ddd;
+	padding: 5px 10px;
+	border-radius: 4px;
+}
+
+.foto {
+	max-width: 100%;
+	border-radius: 4px;
+}
+
+/*
+  Anotações sobre propriedades do grid.
+
+  grid-column: 1 / 3; */
+/* o grid-column conversa em linhas (onde ele pega cada elemento e coloca numa linha e expande esse elemento no tanto de colunas que se quer. 1 /3 significa que ele vai expandir a foto da coluna 1 a coluna 3 dentro do grid.
+  Colocando 1 / -1 você pega o conteúdo e coloca ele de ponta a ponta no container */
+
+/* .foto {
+  grid-column: 1;
+  grid-row: 2 / 5;
+O grid row diz a quantidade de linhas que o item vai ocupar dentro do grid. por exemplo, a foto está ocupando da linha 2 até a linha 5. Uma dica é olhar as linhas no grid dentro do devtools no chrome, lá o grid mostra quantas colunas e linhas a página tem, deixando mais fácil visualizar o número das linhas e em qual delas pode-se ocupar com o conteúdo desejado.
+}*/
