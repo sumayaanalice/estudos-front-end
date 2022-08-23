@@ -1,0 +1,27 @@
+.flex {
+	display: flex;
+	gap: 20px;
+	flex-wrap: wrap;
+}
+
+body {
+	margin: 0px;
+}
+h2 {
+	background-color: #e7e7e7;
+	border: 1px solid #d7d7d7;
+	padding: 20px;
+	margin: 0px;
+	flex-grow: 1;
+	text-align: center;
+}
+
+/* Anotações do Flexbox
+
+Por padrão do flex, ele quebra a palavra de acordo com o tamanho do container, mas isso faz com que ele aumente o padding de todos os elementos dentro do flex, mesmo aqueles que não se faz necessário. E quando ele não consegue mais quebrar o conteúdo dos elementos, ele estoura no documento.
+
+  Então o flex-wrap: wrap faz com o que o elemento em determinado tamanho crie uma nova linha e não estoura o documento.
+
+Flex-grow
+  Normalmente alguns conteúdos são maiores que outros e acabam ocupando mais espaços. O flex-grow serve para dividir o espaço vázio com todos os elementos da página, distribuindo igualmente todos eles.
+*/
